@@ -20,5 +20,8 @@ TARGET_RECOVERY_DEVICE_MODULES ?= init_ivan
 TARGET_KERNEL_CONFIG := lineage-ivan_defconfig
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
+# Vibrator
+TARGET_VIBRATOR_ALT_SEQ_TYPE := true
+
 # Call proprietary blob setup
 include vendor/oplus/ivan/BoardConfigVendor.mk
