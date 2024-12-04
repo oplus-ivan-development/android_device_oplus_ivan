@@ -13,5 +13,10 @@ $(call inherit-product, device/oplus/mt6877-common/common.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.sf.color_saturation=0.95
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayivan \
+    SettingsProviderOverlayivan
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/ivan/ivan-vendor.mk)
