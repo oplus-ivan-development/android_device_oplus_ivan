@@ -29,7 +29,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_ivan
 PRODUCT_DEVICE := ivan
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := OnePlus Nord 2 5G
+PRODUCT_MODEL := OnePlus Nord 2 CE 5G
 PRODUCT_MANUFACTURER := OnePlus
 
 # Build info
