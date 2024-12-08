@@ -9,14 +9,15 @@ DEVICE_PATH := device/oplus/ivan
 # Inherit from ossi device
 $(call inherit-product, device/oplus/mt6877-common/common.mk)
 
-# Display saturation adjust
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.sf.color_saturation=0.95
-
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayivan \
-    SettingsProviderOverlayivan
+    OPlusFrameworksResTarget \
+    OPlusSettingsProviderResTarget \
+    OPlusSystemUIResTarget \
+    OPlusWifiResTarget
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/ivan/ivan-vendor.mk)
