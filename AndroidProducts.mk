@@ -15,13 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ivan.mk \
-    $(LOCAL_DIR)/aosp_ivan.mk
+    $(LOCAL_DIR)/lineage_ivan.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_ivan-user \
     lineage_ivan-userdebug \
-    lineage_ivan-eng \
-    aosp_ivan-user \
-    aosp_ivan-userdebug \
-    aosp_ivan-eng
+    lineage_ivan-eng

@@ -33,9 +33,5 @@ PRODUCT_MODEL := OnePlus Nord 2 CE 5G
 PRODUCT_MANUFACTURER := OnePlus
 
 # Build info
-BUILD_FINGERPRINT := "OnePlus/IV2201EEA/OP555BL1:13/TP1A.220905.001/R.108b2c1-1:user/release-keys"
-
+BUILD_FINGERPRINT := oplus/ossi/ossi:12/SP1A.210812.016/1662019990870:user/release-keys
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "oplus/ossi/ossi:12/SP1A.210812.016/1662019990870:user/release-keys"
