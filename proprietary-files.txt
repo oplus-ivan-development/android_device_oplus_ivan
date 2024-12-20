@@ -495,11 +495,9 @@ odm/lib64/vendor.oplus.hardware.charger@1.0.so
 # Camera
 odm/lib/libmpbase.so
 odm/lib/liboplus_platform_hwi.so
-odm/lib/libormshalclient.so
 odm/lib/vendor.oplus.hardware.engcamera@1.0.so
 odm/lib64/libmpbase.so
 odm/lib64/liboplus_platform_hwi.so
-odm/lib64/libormshalclient.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/vendor.oplus.hardware.engcamera@1.0.so
@@ -2935,7 +2933,7 @@ vendor/lib/libSensorSave.so
 vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-v30.so
 vendor/lib/librgbwlightsensor.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
-vendor/lib64/hw/sensors.mt6893.so
+vendor/lib64/hw/sensors.mt6877.so
 vendor/lib64/libSensorSave.so
 vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v30.so
 vendor/lib64/libhwm-oplus.so
@@ -3007,15 +3005,9 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libmtkisp_metadata.so
 
 # ORMS
-odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
-odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc
--odm/etc/vintf/manifest/manifest_oplus_orms.xml
-odm/lib/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so
-odm/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so
 odm/lib/vendor.oplus.hardware.orms@1.0.so
-odm/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so
-odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
+odm/lib64/libormshalclient.so
 vendor/lib/liboppo_arcSoftBokehEngine.so
 vendor/lib64/liboppo_arcSoftBokehEngine.so
 
