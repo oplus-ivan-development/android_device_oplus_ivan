@@ -10,6 +10,10 @@ vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libaalservice.so
 
+# Hotword Enrollment -
+-my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
+-my_product/priv-app/HotwordEnrollmentOKGoogleRISCV.apk:product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
+
 # APU
 vendor/lib/libapu_mdw.so
 vendor/lib/libapusys.so
@@ -18,6 +22,57 @@ vendor/lib64/libapu_mdw.so
 vendor/lib64/libapusys.so
 vendor/lib64/libapusys_edma.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+
+# miscellaneous
+vendor/lib/lib3a.ae.core.so
+vendor/lib/lib3a.ae.so
+vendor/lib/lib3a.ae.stat.so
+vendor/lib/lib3a.af.assist.so
+vendor/lib/lib3a.af.assist.utils.so
+vendor/lib/lib3a.af.core.so
+vendor/lib/lib3a.af.so
+vendor/lib/lib3a.alsflicker.so
+vendor/lib/lib3a.awb.core.so
+vendor/lib/lib3a.ccudrv.so
+vendor/lib/lib3a.ccuif.so
+vendor/lib/lib3a.custom.ae.so
+vendor/lib/lib3a.dce.so
+vendor/lib/lib3a.flash.so
+vendor/lib/lib3a.flicker.so
+vendor/lib/lib3a.gma.so
+vendor/lib/lib3a.lce.so
+vendor/lib/lib3a.log.so
+vendor/lib/lib3a.n3d3a.so
+vendor/lib/lib3a.sensors.color.so
+vendor/lib/lib3a.sensors.flicker.so
+vendor/lib64/lib3a.ae.core.so
+vendor/lib64/lib3a.ae.so
+vendor/lib64/lib3a.ae.stat.so
+vendor/lib64/lib3a.af.assist.so
+vendor/lib64/lib3a.af.assist.utils.so
+vendor/lib64/lib3a.af.core.so
+vendor/lib64/lib3a.af.so
+vendor/lib64/lib3a.alsflicker.so
+vendor/lib64/lib3a.awb.core.so
+vendor/lib64/lib3a.ccudrv.so
+vendor/lib64/lib3a.ccuif.so
+vendor/lib64/lib3a.custom.ae.so
+vendor/lib64/lib3a.dce.so
+vendor/lib64/lib3a.flash.so
+vendor/lib64/lib3a.flicker.so
+vendor/lib64/lib3a.gma.so
+vendor/lib64/lib3a.lce.so
+vendor/lib64/lib3a.log.so
+vendor/lib64/lib3a.n3d3a.so
+vendor/lib64/lib3a.sensors.color.so
+vendor/lib64/lib3a.sensors.flicker.so
+vendor/lib/lib3a.af.assist.models.so
+vendor/lib/lib3a.aishutter.models.so
+vendor/lib/libAVCSecureVencCA.so
+vendor/lib64/lib3a.af.assist.models.so
+vendor/lib64/lib3a.aishutter.models.so
+vendor/lib64/lib3a.aishutter.models.so
+vendor/lib64/libAVCSecureVencCA.so
 
 # AEE
 vendor/lib/libaedv.so
