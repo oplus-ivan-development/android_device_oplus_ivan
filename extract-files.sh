@@ -19,7 +19,7 @@
 set -e
 
 export DEVICE=ivan
-export VENDOR=oneplus
+export VENDOR=oplus
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -27,7 +27,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}"/../../..
 
-HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/tools/extract-utils-old/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -36,12 +36,13 @@ source "${HELPER}"
 
 function blob_fixup {
     case "$1" in
-        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so|\
         vendor/lib*/libmtkcam_stdutils.so)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
-        vendor/bin/mtk_agpsd)
-           "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
+        vendor/bin/hw/camerahalserver)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             ;;
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
@@ -52,10 +53,10 @@ function blob_fixup {
         vendor/lib*/libmtkisp_metadata.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui_oplus.so" "${2}"
             ;;
-	    vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
-            sed -i 's/start/enable/' "$2"
+        vendor/lib64/libcam.utils.sensorprovider.so)
+            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v30.so" "${2}"
             ;;
-  esac
+    esac
 }
 
 # Default to sanitizing the vendor folder before extraction
