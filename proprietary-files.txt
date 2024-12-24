@@ -435,7 +435,6 @@ vendor/lib/liboplus_platform_hwi.so
 vendor/lib/libstereoinfoaccessor_vsdof.so
 vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.isphal@1.0.so
-vendor/lib/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
